@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Cart</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg border-bottom  py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-lg-5 ms-lg-5 ms-3 fw-semibold" href="index.html">iStore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+           
+            <div class="glass d-lg-flex  d-none">
+              <i class="fa-solid fa-magnifying-glass text-secondary "></i>
+            </div>
+            <form class="d-lg-flex justify-content-start d-none mt-3 mt-lg-0  " role="search">
+              <input class=" searchbox ps-3 " type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <ul class="navbar-nav ms-lg-auto me-5 mb-2 mb-lg-0 mx-1 mx-lg-0 mt-3 mt-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link active mx-4 fw-semibold" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-4" href="#about-contact">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="#about-contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-4" href="index.html">Products</a>
+                  </li>
+                  <div class="d-flex align-items-center mx-lg-0 mx-3">
+                    <li class="nav-item">
+                      <a class="nav-link mx-2" href="#"><i class="fa-regular fa-heart text-black "></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-2" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-2" href="#"><i class="fa-regular fa-user"></i></a>
+                    </li>
+                  </div>
+                 
+           
+              </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar ends -->
+   <main class="container">
+     
+        <article class="row">
+           <section class="col-12 container mt-5">
+             <div class="main-box d-flex gap-5 flex-wrap" >
+
+               <div class="first col-lg-3 col-12">
+                <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                         Brand
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="form-check">
+                                <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label fw-medium" for="flexCheckDefault">
+                                  Samsung <span class="text-secondary">(49)</span>
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label fw-medium" for="flexCheckChecked">
+                                 Apple <span class="text-secondary">(86)</span>
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label fw-medium" for="flexCheckDefault">
+                                 Xiaomi <span class="text-secondary">(36)</span>
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label fw-medium" for="flexCheckDefault">
+                                 Realme <span class="text-secondary">(269)</span>
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label fw-medium" for="flexCheckDefault">
+                                  Vivo <span class="text-secondary">(169)</span>
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label fw-medium" for="flexCheckDefault">
+                                  OPPO <span class="text-secondary">(29)</span>
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label fw-medium" for="flexCheckDefault">
+                                  Motorola <span class="text-secondary">(69)</span>
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label fw-medium" for="flexCheckDefault">
+                                   Nothing <span class="text-secondary">(9)</span>
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label fw-medium" for="flexCheckDefault">
+                                   POCO <span class="text-secondary">(19)</span>
+                                </label>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Battery Capacity
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Screen Type
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Screen Diagonal
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Built-in memory
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Protection class
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+
+               <div class="second">
+                 
+                <section class="">
+                    <div class="">
+                        <div class="dropdown text-lg-end ms-3 ms-lg-0">
+                            <button class="btn btn-outline-dark px-4 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              By the Rating
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </section>
+                <section class="row">
+                    <section class="col-12 mt-3 mt-lg-0">
+                        <section class="d-flex justify-content-center gap-4 mt-4 flex-wrap text-center">
+                            <div class="card bg-light-subtle border-1 shadow-sm "  style="width: 18rem;">
+                              <img src="Assets/14pro.png" class="card-img-top img-fluid p-5" alt="...">
+                              <div class="card-body  pb-5"> 
+                                <p class="card-text">Apple iPhone 14 Pro Max Purple(256GB)</p>
+                                <h5 class="card-title">$1399</h5>
+                                <a href="promobile.html" class="btn btn-dark px-5">Buy Now</a>
+                              </div>
+                            </div>
+                            <div class="card bg-light-subtle border-1 shadow-sm "  style="width: 18rem;">
+                              <img src="Assets/11.png" class="card-img-top img-fluid p-5" alt="...">
+                              <div class="card-body  pb-5"> 
+                                <p class="card-text">Apple iPhone 11 White <br>(128GB)</p>
+                                <h5 class="card-title">$599</h5>
+                                <a href="#" class="btn btn-dark px-5">Buy Now</a>
+                              </div>
+                            </div>
+                          
+                            <div class="card bg-light-subtle border-1 shadow-sm "  style="width: 18rem;">
+                              <img src="Assets/Iphone 14 pro 1 (8).png" class="card-img-top img-fluid p-5" alt="...">
+                              <div class="card-body  pb-5"> 
+                                <p class="card-text">Apple iPhone 15 Pro Max Titanium (512GB)</p>
+                                <h5 class="card-title">$2999</h5>
+                                <a href="#" class="btn btn-dark px-5">Buy Now</a>
+                              </div>
+                            </div>
+                            
+                           </section>
+                           <section class="d-flex justify-content-center gap-4 mt-4 flex-wrap text-center">
+                            <div class="card bg-light-subtle border-1 shadow-sm "  style="width: 18rem;">
+                              <img src="Assets/Iphone 14 pro 1 (9).png" class="card-img-top img-fluid p-5" alt="...">
+                              <div class="card-body  pb-5"> 
+                                <p class="card-text">Apple iPhone 14 Pro Max Gold(256GB)</p>
+                                <h5 class="card-title">$1399</h5>
+                                <a href="#" class="btn btn-dark px-5">Buy Now</a>
+                              </div>
+                            </div>
+                            <div class="card bg-light-subtle border-1 shadow-sm "  style="width: 18rem;">
+                              <img src="Assets/14.png" class="card-img-top img-fluid p-5" alt="...">
+                              <div class="card-body  pb-5"> 
+                                <p class="card-text">Apple iPhone 14 pro Graphite <br> (1TB)</p>
+                                <h5 class="card-title">$1299</h5>
+                                <a href="#" class="btn btn-dark px-5">Buy Now</a>
+                              </div>
+                            </div>
+                          
+                            <div class="card bg-light-subtle border-1 shadow-sm "  style="width: 18rem;">
+                              <img src="Assets/13.png" class="card-img-top img-fluid p-5" alt="...">
+                              <div class="card-body  pb-5"> 
+                                <p class="card-text">Apple iPhone 13 Rose Gold (512GB)</p>
+                                <h5 class="card-title">$799</h5>
+                                <a href="#" class="btn btn-dark px-5">Buy Now</a>
+                              </div>
+                            </div>
+                            
+                           </section>
+                    </section>
+                </section>
+
+                <section class="row">
+                    <section class="col-12 d-flex justify-content-center mt-5">
+                        <nav aria-label="Page navigation example ">
+                            <ul class="pagination ">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item "><a class="page-link active" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </section>
+                </section>
+                 
+               </div>
+
+             </div>  
+           </section>
+        </article>
+
+    </section>
+     
+           
+   </main>
+
+
+    <!-- Footer -->
+
+    <section class="row cont mt-5">
+        <section id="about-contact" class="col-lg-12">
+          <footer class="">
+            <div class=" banner9 text-white">
+              <div class="row margin  ps-lg-5 pt-5 ps-4 p-lg-5 px-lg-5">
+                <div class="col-lg-4">
+                  <div class="d-flex align-items-center"><i class="fa-brands fa-apple fa-2xl"></i>
+                    <h5 class="ms-3 mt-2">iStore</h5>
+                  </div>
+                  <p class="mt-3 ">
+                    "Empowering every person and organization on the planet to achieve more, iStor leads the way in
+                    innovation, technology, and digital transformation."
+                    <br>
+                    Code licensed under the MIT License.
+                    <br>
+                    Currently @Dubai.
+                  </p>
+                </div>
+                <div class="col-lg-2">
+                  <h5>Whats new </h5>
+                  <ul class="list-unstyled mt-4">
+                    <li><a href class="text-decoration-none text-secondary hvr">iMac Pro</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Surface Laptop</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">MacBook Air</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Surface Go</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Open AI</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Iphone 15 Series</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Windows 11 Apps</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 ">
+                  <h5>Guides</h5>
+                  <ul class="list-unstyled mt-4">
+                    <li><a href class="text-decoration-none text-secondary hvr">Getting Started</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">starter template</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Webpack</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Parcel</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Vite</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                  <h5>Business</h5>
+                  <ul class="list-unstyled mt-4">
+                    <li><a href class="text-decoration-none text-secondary hvr">Microsoft 365</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Microsoft Teams</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Microsoft Cloud</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Azure</a></li>
+                    <li><a href class="text-decoration-none text-secondary hvr">Office</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                  <h5>Contact</h5>
+                  <ul class="list-unstyled mt-4">
+                    <li><a href class="text-decoration-none text-secondary">Mob: +91 123456789</a></li>
+                    <li><a href class="text-decoration-none text-secondary">istore@gmail.com</a></li>
+                    <li><a href class="text-decoration-none text-secondary">Corporate Sponsers</a></li>
+                    <li><a href class="text-decoration-none text-secondary">open Collective</a></li>
+                    <li><a href class="text-decoration-none text-secondary">Stack Overflow</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </section>
+    
+      </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
